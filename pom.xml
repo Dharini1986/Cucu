@@ -3,6 +3,13 @@
   <groupId>Cucumber1</groupId>
   <artifactId>Cucumber1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  
  <build>
     <plugins>
 		<plugin>
@@ -10,6 +17,9 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.18.1</version>
             <configuration>
+		            <includes>
+		            <include>SampleJunit.java</include>
+		          </includes>
                 <systemPropertyVariables>
                     <server>https://importresults.qmetry.com/preprod/importresults-qtm4j</server>
                     <apiKey>bHlmsohnrF24vYQ1V0sOsiwrG6RT4W5gp25LaITD</apiKey>
