@@ -17,9 +17,6 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.18.1</version>
             <configuration>
-		            <includes>
-		            <include>SampleJunit.java</include>
-		          </includes>
                 <systemPropertyVariables>
                     <server>https://importresults.qmetry.com/preprod/importresults-qtm4j</server>
                     <apiKey>bHlmsohnrF24vYQ1V0sOsiwrG6RT4W5gp25LaITD</apiKey>
